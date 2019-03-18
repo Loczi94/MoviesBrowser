@@ -70,7 +70,7 @@ function deletePreviousData() {
 }
 
 function getDataFromAPI() {
-    let url = 'http://www.omdbapi.com/?apikey=d925505&s=';
+    let url = 'https://www.omdbapi.com/?apikey=d925505&s=';
     url += title.value;
     if (category.value) {
         url += '&type=' + category.value;
