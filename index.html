@@ -1,0 +1,80 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>Movies Browser</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="shortcut icon" href="favicon.ico">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+  <!--[if lte IE 9]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js">
+</script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js">
+  <![endif]-->
+  <div container-fluid>
+    <div class="row">
+      <div class="col-12 text-center">
+        <img src="img/poster.png" class="img-fluid">
+        <h1 class="align-center">Movies Browser</h1>
+      </div>
+    </div>
+      <div class="row">
+        <div class="offset-md-3 col-md-6 col-sm-12 text-center">
+            <form id="searchForm" autocomplete="off">
+                <label for="title">Enter movie's title:</label>
+                <br>
+                <input type="text" id="title" name="title" required>
+                <br>
+                <label for="category">Choose category:</label>
+                <br>
+                <select id="category" name="category">
+                  <option value="">All</option>
+                  <option value="movie">Movie</option>
+                  <option value="series">Series</option>
+                  <option value="episode">Episode</option>
+                </select>
+                <br>
+                <label for="year">Year of release:</label>
+                <br>
+                <input type="text" id="year" name="year"">
+                <br>
+                <input type="submit" id="submit" value="Search">
+              </form>
+        </div>
+        </div>
+        <div class="results">
+        </div>
+  </div>
+
+
+  <script src="js/vendor/modernizr-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+  <script src="js/bootstrap.js"></script>
+</body>
+
+</html>
