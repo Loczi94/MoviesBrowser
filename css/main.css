@@ -154,6 +154,7 @@ form {
     box-shadow: 5px 5px 7px grey;
     border-radius: 2%;
     background-image: linear-gradient(to top right, white, gray);
+    margin: 5%;
 }
 
 .results img {
@@ -165,12 +166,13 @@ form {
     text-shadow: 1px 1px 2px grey;
 }
 
-.poster {
-    margin: 2%;
+.poster,
+.info {
+    margin-top: 4%;
 }
 
 .row {
-    margin: 2%;
+    margin: 0;
 }
 
 

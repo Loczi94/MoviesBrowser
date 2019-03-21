@@ -36,6 +36,7 @@ function printData(response) {
             }
 
             const infoDiv = document.createElement('div');
+            infoDiv.classList.add('info');
             infoDiv.classList.add('col-md-5');
             infoDiv.classList.add('col-lg-2');
             let h2 = document.createElement('h2');
