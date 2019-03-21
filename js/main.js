@@ -20,6 +20,7 @@ function printData(response) {
             let info = response['Search'][i];
 
             const posterDiv = document.createElement('div');
+            posterDiv.classList.add('poster');
             if (i%2 === 1) {
                 posterDiv.classList.add('offset-lg-0');             
             }
@@ -58,7 +59,6 @@ function printData(response) {
             infoDiv.appendChild(catYear);
             newRow.appendChild(posterDiv);
             newRow.appendChild(infoDiv);
-            console.log(info);
         }
     }
 }
